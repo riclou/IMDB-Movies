@@ -7,23 +7,35 @@
     <title>IMDB - Movies</title>
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d349635840.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
-        <section class="choice">
-            <h1>Escolha a opção que queria ver o rating</h1>
-            <select name="" id="">
-                <option disabled selected>-</option>
-                <option value="action">Ação</option>
-                <option value="romance">Romance</option>
-                <option value="comedy">Comédia</option>
-                <option value="horror">Terror</option>
-            </select>
+        <a href="#choice" class="to-top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+        <section class="choice" id="choice">
+            <div>
+                <h1>Escolha a opção que queria ver o rating</h1>
+                <select name="genre" onchange="update()">
+                    <option value="0" disabled selected>-</option>
+                    <option value="28">Ação</option>
+                    <option value="10749">Romance</option>
+                    <option value="35">Comédia</option>
+                    <option value="27" >Terror</option>
+                </select>
+                <button onClick="window.location.reload();">Resetar</button>
+            </div>
+            <div>
+                <img class="illustration" src="illustration/movie-illustri.svg" alt="illustration">
+            </div>
         </section>
         <section class="rating-action">
             <div>
                 <h1 class="name"></h1>
-                <div id="teste"></div>
+                <div id="container">
+
+                </div>
             </div>
         </section>
     </main>

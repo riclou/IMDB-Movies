@@ -1,0 +1,131 @@
+@import url("https://use.typekit.net/hhc0kaq.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.choice{
+    display: flex;
+    height: 100vh;
+    text-align:left;
+    background-size: cover;
+    background-position:  center center;
+    background-attachment: fixed;
+    padding:10rem 0 0 3rem ;
+    background-color: #25283D;
+}
+.choice h1{
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+.choice img{
+    height: 60vh;
+    margin-left:10rem;
+}
+@media (max-width: 700px) {
+    .illustration {
+      display: none;
+    }
+  }
+.choice select{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.4rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: #565676;
+    width: 270px;
+    height: 48px;
+    font-size: 18px;
+    padding: 13px 20px 13px 12px;
+    color: #fff;
+    text-indent: 0.01px;
+    text-overflow: "";
+    border-radius: 5px 5px 0 5px;
+}
+.choice select::-ms-expand {
+    display: none;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.movies-list{
+    margin: 1rem 1rem 10rem 1rem;
+    padding: 1rem;
+    text-align: center;
+    max-width: 280px;
+    min-height: 300px;
+    max-height: 300px;
+}
+.movies-list h1{
+    margin-bottom: 1rem;
+}
+.movies-list img{
+    height: 360px;
+    width: 250px;
+}
+.movies-list p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #25283D 2rem solid;
+    background-color: #25283D;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    position: relative;
+    bottom: 3rem;
+    right: 1rem;
+    color: #fff;
+    cursor: default;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title-default{
+    border: #565676 3px solid;
+}
+
+button{
+    border-radius: 8px;
+    border-width: 0;
+    color: #333333;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 2rem;
+    padding: 10px 12px;
+}
+.to-top {
+    background: #25283D;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#fff;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+    z-index: 3;
+  }
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
