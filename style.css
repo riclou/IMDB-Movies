@@ -211,6 +211,7 @@ button{
     }
     .active-modal img{
      margin: auto;
+     margin-bottom: 1.5rem;
     }
   }
   @media (max-width: 650px) {
