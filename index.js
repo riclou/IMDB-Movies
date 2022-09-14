@@ -30,17 +30,19 @@ function update(){
                 color = 'yellow'
             }
             
-            console.log(urlname)
             container.appendChild(listName)
             listName.innerHTML = `<h1 class= "title-default">${urlname.title}</h1><img class="image" src="${imageDefault}${urlname.poster_path}" alt="poster-Image"><p  style="color:${color} ;">${urlname.vote_average}</p>`
 
             
             /*============== MODAL ==============*/
 
-            const imageModal = document.querySelectorAll('.image')
-            console.log(urlname)
+            const images = document.querySelectorAll('.image')
+            const modal = images[images.length - 1]
+            
+            
           
-            imageModal.forEach((modal) => {
+            
+             
               modal.addEventListener('click', () =>{
                 modalContainer.classList.remove('close')
         
@@ -59,7 +61,6 @@ function update(){
                                     </div>
                                       `
               })
-            })
 
     })
 }
