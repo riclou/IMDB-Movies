@@ -11,7 +11,6 @@ function update(){
     let select = document.querySelector("select[name='genre'] option:checked").value
 
     async function tmdb(){
-
     const url = await fetch (`https://api.themoviedb.org/3/discover/movie?api_key=ab310e62ef3273cfc74b4223844d3e79&language=pt-BR&with_genres=${select}`)
     .then((url) => url.json())
     
@@ -38,11 +37,7 @@ function update(){
 
             const images = document.querySelectorAll('.image')
             const modal = images[images.length - 1]
-            
-            
-          
-            
-             
+               
               modal.addEventListener('click', () =>{
                 modalContainer.classList.remove('close')
         
